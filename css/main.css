@@ -1,0 +1,61 @@
+/* ============================================
+   BASE STYLES & RESET
+   ============================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --color-bg:         #121212;
+  --color-surface-1:  #1a1a1a;
+  --color-surface-2:  #1e1e1e;
+  --color-surface-3:  #2a2a2a;
+  --color-surface-4:  #2d2d2d;
+  --color-border:     #333;
+  --color-border-mid: #3a3a3a;
+  --color-border-top: #444;
+
+  --color-text-primary:   #e0e0e0;
+  --color-text-secondary: #c0c0c0;
+  --color-text-muted:     #b0b0b0;
+  --color-text-faint:     #888;
+  --color-text-white:     #ffffff;
+
+  --color-accent:       #6c8cbf;
+  --color-link:         #a0c8ff;
+  --color-link-hover:   #ffffff;
+
+  --color-teal:         #2fbfb0;
+  --color-teal-dim:     rgba(47, 191, 176, 0.15);
+  --color-teal-border:  rgba(47, 191, 176, 0.5);
+
+  --radius-sm:  6px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-nav:  0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-footer: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+  --transition-base: 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
