@@ -103,6 +103,57 @@
   color: var(--color-teal);
 }
 
+/* Contact link with icon (left column) */
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* SVG icon — muted white, transitions to teal on hover */
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.45;
+  filter: brightness(0) invert(1);
+  transition: opacity var(--transition-base), filter var(--transition-base);
+}
+
+.contact-link:hover .contact-icon,
+.contact-list-link:hover .contact-icon {
+  opacity: 1;
+  filter: brightness(0) saturate(100%)
+          invert(68%) sepia(60%) saturate(400%)
+          hue-rotate(130deg) brightness(95%) contrast(90%);
+}
+
+.contact-list {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.contact-list-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-link);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.contact-list-link:hover {
+  color: var(--color-teal);
+}
+
 .skills ul {
   list-style: none;
 }
